@@ -17,7 +17,7 @@ const Billing: React.FC = () => {
     bg-left-bottom bg-cover overflow-hidden  py-2 text-white">
       {/* Left Side - PayPal Card & Transactions */}
       <motion.div 
-        className="relative flex flex-col items-center space-y-10 min-h-screen py-20"
+        className="relative ml-20 flex flex-col items-center space-y-10 min-h-screen py-20"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.2 }}

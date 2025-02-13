@@ -9,31 +9,30 @@ const Hero: React.FC = () => {
     <section className=" bg-[#00040F] px-10 relative flex flex-col lg:flex-row items-center justify-between  py-20 text-white "
   >
       {/* Left Side Content */}
-      <div className="max-w-lg ">
+      <div className="max-w-lg ml-20 ">
         {/* Discount Badge */}
-        <div className="flex items-center w-60 bg-gradient-to-b from-[#272727] to-[#11101D] px-1 py-1 rounded-full text-sm text-gray-300 mb-4 justify-center">
+        <div className="flex items-center w-80  bg-gradient-to-b from-[#272727] to-[#11101D] px-1 py-1 rounded-full text-sm text-gray-300 mb-4 justify-center">
          
-         <img src="/discount.png" alt="" className="h-4" />
+         <img src="/discount.png" alt="" className="h-6" />
         </div>
 {/* console.log('Hero component rendered'); */}
     {/* Hero Heading Section */}
-<div className="flex flex-col lg:flex-row items-center justify-between w-full">
+<div className="relative flex flex-col lg:flex-row items-center  w-full">
   {/* Left Content (Text) */}
-  <div className="max-w-xl">
-    <h1 className="font-poppins font-semibold text-[48px]  lg:text-[64px] leading-tight tracking-[1%]">
+  {/* <div className=""> */}
+    <h1 className="font-poppins font-semibold text-[56px]   leading-tight tracking-[1%]">
       The Next <br />
       <span className="bg-gradient-to-l from-[#DEF9FA] to-[#33BBCF] bg-clip-text text-transparent">
         Generation
-      </span>
-      <br />
+      </span><br/>
       Payment Method.
     </h1>
-  </div>
+  {/* </div> */}
 
   {/* CTA Button */}
-  <div className="mt-8 lg:mt-0">
-    <button className="flex items-center justify-center w-24 h-24 rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform">
-      <img src="/get.png" alt="Get Started" className="w-20 h-20 object-contain" />
+  <div className="mt-8 lg:mt-0 absolute top-1 right-6">
+    <button className="flex items-center justify-center w-24 h-24  rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform">
+      <img src="/get.png" alt="Get Started" className="object-contain" />
     </button>
   </div>
 </div>
@@ -51,9 +50,16 @@ const Hero: React.FC = () => {
 
      
       
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2">
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2"
+       style={{
+        backgroundImage: "url('/Vector16.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}>
   {/* Background with Radial Gradient */}
-  <div className="relative bg-gradient-radial z-20 from-gray-300 to-gray-500 rounded-3xl p-2">
+  <div className="relative bg-gradient-radial z-20 from-gray-300 to-gray-500 rounded-3xl p-2"
+    >
     {/* Credit Cards Stack */}
     <div className="relative">
       {/* Back Card */}

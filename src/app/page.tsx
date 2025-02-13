@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import { FooterLink } from "@/types/foot";
 import { Feature } from "@/types/index";
 
+
 const footerLinks: FooterLink[] = [
   {
     title: "Useful Links",
@@ -83,7 +84,9 @@ export default function Home() {
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <Statistics stats={stat} />
+        
       </motion.div>
+      
 
       {/* Business Section & Billing */}
       <motion.div 

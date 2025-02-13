@@ -22,7 +22,7 @@ const Dashboard: React.FC = () => {
 
   return (
     <motion.div
-      className="relative flex items-center mr-60 justify-center"
+      className="relative flex items-center  justify-center"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.2 }}

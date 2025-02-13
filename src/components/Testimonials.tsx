@@ -43,7 +43,7 @@ const Testimonials: React.FC = () => {
     >
       {/* Heading */}
       <motion.div
-        className="flex flex-col md:flex-row justify-between items-start md:items-center"
+        className="flex ml-20 flex-col md:flex-row justify-between items-start md:items-center"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -59,7 +59,7 @@ const Testimonials: React.FC = () => {
       </motion.div>
 
       {/* Testimonials Grid */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="mt-12 ml-20 grid grid-cols-1 md:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={testimonial.id}

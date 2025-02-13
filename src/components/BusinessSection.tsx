@@ -16,7 +16,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
     <section className="relative bg-[#00040F] px-10 flex flex-col lg:flex-row items-center justify-between  py-20 text-white">
       {/* Left Side Content */}
       <motion.div
-        className="max-w-xl"
+        className="max-w-xl ml-20"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, amount: 0.2 }}

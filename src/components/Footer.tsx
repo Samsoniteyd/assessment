@@ -11,7 +11,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ footerLinks }) => {
   return (
     <footer className=" text-white bg-[#00040F] px-10  py-12">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container ml-20 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
           <img src="/logo.png" alt="HooBank Logo" width={150} height={50} />
@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = ({ footerLinks }) => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="flex flex-col md:flex-row items-center justify-between border-t border-gray-700 mt-8 pt-6">
+      <div className=" ml-20 flex flex-col md:flex-row items-center justify-between border-t border-gray-700 mt-8 pt-6">
         <p className="text-gray-400 text-sm">Copyright © 2021 HooBank. All Rights Reserved.</p>
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">

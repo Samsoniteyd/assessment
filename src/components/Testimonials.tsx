@@ -33,7 +33,7 @@ const testimonials = [
 const Testimonials: React.FC = () => {
   return (
     <motion.section
-      className="relative py-20 px-10 mx-auto max-w-screen-xl text-white
+      className="relative py-20 px-10 mx-auto  text-white
                  bg-[#00040F] bg-[url('/rec.png')] bg-no-repeat 
                  bg-right-bottom bg-contain"
       initial={{ opacity: 0 }}

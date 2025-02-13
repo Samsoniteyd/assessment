@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
   {/* CTA Button */}
   <div className="mt-8 lg:mt-0">
     <button className="flex items-center justify-center w-24 h-24 rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform">
-      <img src="/get.png" alt="Get Started" className="w-14 h-14 object-contain" />
+      <img src="/get.png" alt="Get Started" className="w-20 h-20 object-contain" />
     </button>
   </div>
 </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 interface Statistic {
   id: number;
@@ -12,15 +15,37 @@ interface StatisticsProps {
 
 const Statistics: React.FC<StatisticsProps> = ({ stats }) => {
   return (
-    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 px-10 py-6 text-white border-b border-gray-700">
+    <motion.div
+      className="flex bg-[#00040F] px-10w-full flex-wrap items-center justify-center  gap-20  py-20 text-white"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       {stats.map((stat, index) => (
-        <div key={stat.id} className="flex items-center space-x-2">
-          <h3 className="text-2xl font-bold">{stat.value}</h3>
-          <p className="text-gray-400 uppercase text-sm">{stat.label}</p>
-          {index < stats.length - 1 && <span className="hidden lg:block text-gray-600">|</span>}
-        </div>
+        <motion.div
+          key={stat.id}
+          className="flex items-center space-x-2"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+        >
+          {/* Number Value */}
+          <h3 className="font-poppins font-semibold text-[40.89px] leading-[53.16px] tracking-[0px]">{stat.value}</h3>
+
+          {/* Gradient Text */}
+          <p className="uppercase  bg-gradient-to-r from-[#33BBCF] to-[#DEF9FA] bg-clip-text text-transparent font-poppins font-normal text-[20.45px] leading-[26.58px] tracking-[0px]">
+            {stat.label}
+          </p>
+
+          {/* Separator (Hidden on small screens) */}
+          {index < stats.length - 1 && (
+            <span className="hidden lg:block text-gray-600 ">|</span>
+          )}
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

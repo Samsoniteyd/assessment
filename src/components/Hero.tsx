@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import { motion } from "framer-motion";
 
 
 // import Image from "next/image";
@@ -15,7 +16,11 @@ const Hero: React.FC = () => {
     }}>
       
       {/* Left Side Content */}
-      <div className="max-w-lg ml-20 ">
+      <motion.div className="max-w-lg ml-20 "
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}>
         {/* Discount Badge */}
         <div className="flex items-center w-80  bg-gradient-to-b from-[#272727] to-[#11101D] px-1 py-1 rounded-full text-sm text-gray-300 mb-4 justify-center">
          
@@ -23,7 +28,7 @@ const Hero: React.FC = () => {
         </div>
 
     {/* Hero Heading Section */}
-<div className="relative flex flex-col lg:flex-row items-center  w-full">
+  <div className="relative flex flex-col lg:flex-row items-center  w-full">
   {/* Left Content (Text) */}
   {/* <div className=""> */}
     <h1 className="font-poppins font-semibold text-[72px]   leading-tight tracking-[1%]">
@@ -52,22 +57,27 @@ const Hero: React.FC = () => {
         </p>
 
         
-      </div>
+      </motion.div>
 
      
-      
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 "
-       style={{
-        backgroundImage: "url('/Vector16.png')",
+         <div className="absolute top-44 right-0 transform -translate-y-1/2 "
+       >
+  {/* Background with Radial Gradient */}
+  <div className="relative bg-gradient-radial  from-gray-300 to-gray-500 rounded-3xl p-2"
+    style={{
+      backgroundImage: "url('/Vector16.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
+    {/* Credit Cards Stack */}
+    <div className="relative"
+      style={{
+        backgroundImage: "url('/Rechero.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}>
-  {/* Background with Radial Gradient */}
-  <div className="relative bg-gradient-radial z-20 from-gray-300 to-gray-500 rounded-3xl p-2"
-    >
-    {/* Credit Cards Stack */}
-    <div className="relative">
       {/* Back Card */}
       <div className="absolute transform rotate-12 translate-y-18 -translate-x-14 z-20">
         <img src="/Group2.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
@@ -83,7 +93,7 @@ const Hero: React.FC = () => {
     </div>
 
     {/* Floating Circles */}
-    <img src="/circle1.png" alt="" className="absolute top-0 -left-19 w-12 h-12" />
+    <img src="/circle1.png" alt="" className="absolute top-0 -left-19 w-16 h-16" />
     <img src="/circle2.png" alt="" className="absolute bottom-0 right-14 w-10 h-10" />
     <img src="/circle3.png" alt="" className="absolute -bottom-5 left-6 w-6 h-6" />
 
@@ -93,6 +103,10 @@ const Hero: React.FC = () => {
     </div>
   </div>
 </div>
+
+     
+      
+     
 
       
     </section>

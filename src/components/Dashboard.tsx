@@ -30,21 +30,21 @@ const Dashboard: React.FC = () => {
     >
       {/* Background Circles */}
       <motion.div
-        className="absolute w-60 h-60 border-8 border-[#023d44] rounded-full"
+        className="absolute w-80 h-80 border-8 border-[#023d44] rounded-full"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
       ></motion.div>
       <motion.div
-        className="absolute w-40 h-40 border-4 border-[#023d44] rounded-full"
+        className="absolute w-56 h-56 border-4 border-[#023d44] rounded-full"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
       ></motion.div>
       <motion.div
-        className="absolute w-20 h-20 border-4 border-[#023d44] rounded-full"
+        className="absolute w-32 h-32 border-4 border-[#023d44] rounded-full"
         initial={{ opacity: 0, scale: 0.5 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
@@ -77,7 +77,7 @@ const Dashboard: React.FC = () => {
 
         {/* Pay Methods */}
         <motion.div
-          className="absolute top-14"
+          className="absolute top-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}

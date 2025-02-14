@@ -59,7 +59,7 @@ const features: Feature[] = [
 
 export default function Home() {
   return (
-    <div className="bg-[#00040F]  font-poppins"
+    <div className="bg-[#00040F]   font-poppins"
     >
       <Head>
         <title>HooBank | Next Gen Payment</title>

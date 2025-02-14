@@ -14,7 +14,7 @@ interface OnlineAnalysisProps {
 
 const OnlineAnalysis: React.FC<OnlineAnalysisProps> = ({ data }) => {
   return (
-    <div className="relative   bg-cover bg-center bg-no-repeat p-2 rounded-xl shadow-lg text-white"
+    <div className="relative   bg-cover bg-center bg-no-repeat p-3 rounded-xl shadow-lg text-white"
     style={{ backgroundImage: "url('/Rectangle2.png')" }}>
         <div className=" flex justify-between">
         <h3 className="text-sm font-semibold">Online Analysis</h3>

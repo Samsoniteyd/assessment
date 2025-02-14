@@ -14,7 +14,13 @@ const transactions = [
 const Billing: React.FC = () => {
   return (
     <section className="flex bg-[#00040F] px-10 flex-col lg:flex-row items-center justify-between    bg-no-repeat 
-    bg-left-bottom bg-cover overflow-hidden  py-2 text-white">
+    bg-left-bottom bg-cover overflow-hidden  py-2 text-white"
+    style={{
+      backgroundImage: "url('/Ellipse3.png')",
+      backgroundSize: "contain",
+      backgroundPosition: "left center",
+      backgroundRepeat: "no-repeat",
+    }}>
       {/* Left Side - PayPal Card & Transactions */}
       <motion.div 
         className="relative ml-20 flex flex-col items-center space-y-10 min-h-screen py-20"

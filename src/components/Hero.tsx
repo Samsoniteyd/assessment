@@ -7,7 +7,13 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <section className=" bg-[#00040F] px-10 relative flex flex-col lg:flex-row items-center justify-between  py-20 text-white "
-  >
+    style={{
+      backgroundImage: "url('/Ellipse3.png')",
+      backgroundSize: "100% 100%",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    }}>
+      
       {/* Left Side Content */}
       <div className="max-w-lg ml-20 ">
         {/* Discount Badge */}
@@ -15,7 +21,7 @@ const Hero: React.FC = () => {
          
          <img src="/discount.png" alt="" className="h-6" />
         </div>
-{/* console.log('Hero component rendered'); */}
+
     {/* Hero Heading Section */}
 <div className="relative flex flex-col lg:flex-row items-center  w-full">
   {/* Left Content (Text) */}
@@ -50,7 +56,7 @@ const Hero: React.FC = () => {
 
      
       
-      <div className="absolute top-1/2 right-0 transform -translate-y-1/2"
+      <div className="absolute top-1/2 right-0 transform -translate-y-1/2 "
        style={{
         backgroundImage: "url('/Vector16.png')",
         backgroundSize: "cover",
@@ -77,9 +83,9 @@ const Hero: React.FC = () => {
     </div>
 
     {/* Floating Circles */}
-    <img src="/circle1.png" alt="" className="absolute top-0 -left-10" />
-    <img src="/circle2.png" alt="" className="absolute bottom-0 right-3" />
-    <img src="/circle3.png" alt="" className="absolute -bottom-20 left-6 w-4 h-4" />
+    <img src="/circle1.png" alt="" className="absolute top-0 -left-19 w-12 h-12" />
+    <img src="/circle2.png" alt="" className="absolute bottom-0 right-14 w-10 h-10" />
+    <img src="/circle3.png" alt="" className="absolute -bottom-5 left-6 w-6 h-6" />
 
     {/* Robot Hand */}
     <div className="absolute top-1/2 right-0 transform">

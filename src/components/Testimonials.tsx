@@ -35,7 +35,7 @@ const Testimonials: React.FC = () => {
     <motion.section
       className="relative py-20 px-10 mx-auto  text-white
                  bg-[#00040F] bg-[url('/rec.png')] bg-no-repeat 
-                 bg-right-bottom bg-contain"
+                 bg-right-bottom bg-contain "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
         {testimonials.map((testimonial, index) => (
           <motion.div
             key={testimonial.id}
-            className={`p-8 rounded-xl backdrop-blur-md shadow-lg
+            className={`p-8 rounded-xl backdrop-blur-md 
                         transition-transform duration-300 transform hover:scale-105 ${
               index === 0 ? "bg-white/10" : ""
             }`}

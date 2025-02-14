@@ -22,8 +22,8 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
       <h3 className="text-white font-semibold mb-3">Last Transaction</h3>
 
       {transactions.map((transaction) => {
-        // Apply different background styles based on transaction name
-        let logoBgClass = "bg-white"; // Default background
+       
+        let logoBgClass = "bg-white";
         if (transaction.name.toLowerCase().includes("netflix")) {
           logoBgClass = "bg-white";
         } else if (transaction.name.toLowerCase().includes("manulife")) {
@@ -46,7 +46,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
             {/* Amount & Arrow Icon */}
             <div className="flex items-center space-x-2">
               <img
-                src={transaction.isNegative ? "/Polygon3.png" : "/Polygon4.png"} // Replace with your actual up/down icons
+                src={transaction.isNegative ? "/Polygon3.png" : "/Polygon4.png"} 
                 alt={transaction.isNegative ? "Down" : "Up"}
                 width={15}
                 height={15}

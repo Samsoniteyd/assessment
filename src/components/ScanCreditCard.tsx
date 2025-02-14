@@ -4,13 +4,13 @@ import React from "react";
 
 const ScanCreditCard: React.FC = () => {
   return (
-    <div className="relative w-40  bg-cover bg-center bg-no-repeat p-4 rounded-xl shadow-lg flex flex-col items-center text-white"
+    <div className="relative w-44  bg-cover bg-center bg-no-repeat p-4 rounded-xl shadow-lg flex flex-col items-center text-white"
     style={{ backgroundImage: "url('/Rectangle2.png')" }}>
       <div className="bg-[#00030C] p-1 rounded-lg flex items-center justify-center mb-2">
         <img src="/Scan.png" alt="Scan Icon" width={20} height={20} />
       </div>
-      <h3 className="text-xs font-semibold">Scan Credit Cards</h3>
-      <p className="text-gray-400 text-xs text-center">Scan your credit card in 4 minutes.</p>
+      <h3 className="font-poppins font-semibold text-[16px] leading-[25.6px] tracking-[1%] text-center">Scan Credit Cards</h3>
+      <p className="text-white/70 font-poppins font-normal text-[12px] leading-[19.2px] tracking-[1%] text-center">Scan your credit card in 4 minutes.</p>
     </div>
   );
 };

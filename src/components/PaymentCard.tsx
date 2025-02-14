@@ -10,7 +10,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ balance }) => {
   return (
     <div
       className="relative w-64  rounded-xl shadow-lg p-5 bg-cover bg-center"
-      style={{ backgroundImage: "url('/Rectangle2.png')" }} // Update with your image path
+      style={{ backgroundImage: "url('/Rectangle2.png')" }} 
     >
       {/* PayPal Header */}
       <div className="flex items-center space-x-3">

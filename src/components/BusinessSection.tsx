@@ -9,7 +9,7 @@ interface BusinessSectionProps {
 }
 
 const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
-  // Find the middle feature index
+  
   const middleIndex = Math.floor(features.length / 2);
 
   return (
@@ -40,7 +40,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
         </motion.button>
       </motion.div>
 
-      {/* Right Side - Features List */}
+      {/* Right Side */}
       <motion.div
         className="mt-10 lg:mt-0 space-y-6 w-full max-w-md"
         initial={{ opacity: 0, x: 50 }}

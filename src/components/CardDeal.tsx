@@ -15,7 +15,7 @@ const CardDeal: React.FC = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Left Side - Text Content */}
+      {/* Left Side */}
       <motion.div
         className="max-w-xl text-center ml-20 lg:text-left"
         initial={{ opacity: 0, x: -50 }}
@@ -42,7 +42,7 @@ const CardDeal: React.FC = () => {
         </motion.button>
       </motion.div>
 
-      {/* Right Side - Dashboard Animation */}
+      {/* Right Side */}
       <motion.div
         className="relative w-full max-w-md lg:max-w-lg mt-10 lg:mt-0"
         initial={{ opacity: 0, scale: 0.9 }}

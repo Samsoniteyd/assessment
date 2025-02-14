@@ -16,11 +16,11 @@ const OnlineAnalysis: React.FC<OnlineAnalysisProps> = ({ data }) => {
   return (
     <div className="relative   bg-cover bg-center bg-no-repeat p-3 rounded-xl shadow-lg text-white"
     style={{ backgroundImage: "url('/Rectangle2.png')" }}>
-        <div className=" flex justify-between">
-        <h3 className="text-sm font-semibold">Online Analysis</h3>
-        <div className="flex gap-1">
+        <div className=" flex items-center justify-between">
+        <h3 className="font-poppins font-semibold text-[16px] leading-[25.6px] tracking-[1%] text-center">Online Analysis</h3>
+        <div className="flex gap-1  items-center gap-x-1">
 
-        <p className="text-gray-400 text-sm">1 Month</p><span> <img src="/arrow_drop_down.png" alt="" /></span>
+        <p className="font-poppins font-normal text-[10px] leading-[13px] tracking-[0%] text-white/70">1 Month</p><span> <img src="/arrow_drop_down.png" alt="" /></span>
 
         </div>
       

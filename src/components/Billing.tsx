@@ -21,7 +21,7 @@ const Billing: React.FC = () => {
       backgroundPosition: "left center",
       backgroundRepeat: "no-repeat",
     }}>
-      {/* Left Side - PayPal Card & Transactions */}
+      {/* Left Side  */}
       <motion.div 
         className="relative ml-20 flex flex-col items-center space-y-10 min-h-screen py-20"
         initial={{ opacity: 0, x: -50 }}
@@ -64,7 +64,7 @@ const Billing: React.FC = () => {
         </div>
       </motion.div>
 
-      {/* Right Side - Billing Information */}
+      {/* Right Side  */}
       <motion.div 
         className="max-w-lg lg:ml-16 mt-10 lg:mt-0"
         initial={{ opacity: 0, x: 50 }}

@@ -20,12 +20,12 @@ const Hero: React.FC = () => {
 <div className="relative flex flex-col lg:flex-row items-center  w-full">
   {/* Left Content (Text) */}
   {/* <div className=""> */}
-    <h1 className="font-poppins font-semibold text-[56px]   leading-tight tracking-[1%]">
+    <h1 className="font-poppins font-semibold text-[72px]   leading-tight tracking-[1%]">
       The Next <br />
       <span className="bg-gradient-to-l from-[#DEF9FA] to-[#33BBCF] bg-clip-text text-transparent">
         Generation
       </span><br/>
-      Payment Method.
+      PaymentMethod.
     </h1>
   {/* </div> */}
 

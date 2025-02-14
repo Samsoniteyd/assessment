@@ -9,7 +9,7 @@ interface PaymentCardProps {
 const PaymentCard: React.FC<PaymentCardProps> = ({ balance }) => {
   return (
     <div
-      className="relative w-72  rounded-xl shadow-lg p-5 bg-cover bg-center"
+      className="relative w-64  rounded-xl shadow-lg p-5 bg-cover bg-center"
       style={{ backgroundImage: "url('/Rectangle2.png')" }} // Update with your image path
     >
       {/* PayPal Header */}
@@ -30,7 +30,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ balance }) => {
           <p className="text-gray-400 text-sm">Total</p>
           <h2 className="text-white text-2xl font-bold">${balance}</h2>
         </div>
-        <button className="border border-[#33BBCF] text-[#33BBCF] text-xs px-3 py-1 rounded-md transition hover:bg-[#33BBCF] hover:text-white">
+        <button className="border border-[#33BBCF] text-[#33BBCF] text-xs px-4 py-3 rounded-md transition hover:bg-[#33BBCF] hover:text-white">
           Change
         </button>
       </div>

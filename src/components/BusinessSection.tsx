@@ -70,7 +70,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
           >
             {/* Icon Container */}
             <div className="flex items-center justify-center bg-gray-800 p-2 rounded-full">
-              <img src={feature.icon} alt={feature.title} width={30} height={30} />
+              <img src={feature.icon} alt={feature.title} width={40} height={40} />
             </div>
 
             {/* Feature Content */}

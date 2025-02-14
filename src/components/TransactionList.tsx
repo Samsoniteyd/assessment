@@ -23,11 +23,11 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
 
       {transactions.map((transaction) => {
         // Apply different background styles based on transaction name
-        let logoBgClass = ""; // Default background
+        let logoBgClass = "bg-white"; // Default background
         if (transaction.name.toLowerCase().includes("netflix")) {
           logoBgClass = "bg-white";
         } else if (transaction.name.toLowerCase().includes("manulife")) {
-          logoBgClass = "bg-green-200";
+          logoBgClass = "bg-green-200 overflow-hidden";
         }
 
         return (
@@ -35,7 +35,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
             {/* Logo & Name */}
             <div className="flex items-center space-x-3">
               <div className={`w-8 h-8 ${logoBgClass} flex items-center justify-center rounded-full`}>
-                <img src={transaction.logo} alt={transaction.name} width={20} height={20} className="object-contain" />
+                <img src={transaction.logo} alt={transaction.name} width={30} height={30} className="object-contain" />
               </div>
               <div>
                 <h4 className="text-white text-sm">{transaction.name}</h4>

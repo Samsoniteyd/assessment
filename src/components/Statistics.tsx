@@ -19,7 +19,7 @@ const Statistics: React.FC<StatisticsProps> = ({ stats }) => {
       className="flex bg-[#00040F] px-10w-full flex-wrap items-center justify-center  gap-20  py-20 text-white"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{  amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {stats.map((stat, index) => (
@@ -28,7 +28,7 @@ const Statistics: React.FC<StatisticsProps> = ({ stats }) => {
           className="flex items-center space-x-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{  amount: 0.2 }}
           transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
         >
           {/* Number Value */}

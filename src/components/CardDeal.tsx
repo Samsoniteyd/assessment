@@ -20,7 +20,7 @@ const CardDeal: React.FC = () => {
         className="max-w-xl text-center ml-20 lg:text-left"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h2 className="font-poppins font-semibold  text-[40px] md:text-[48px] leading-tight">
@@ -47,7 +47,7 @@ const CardDeal: React.FC = () => {
         className="relative w-full max-w-md lg:max-w-lg mt-10 lg:mt-0"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       >
         <Dashboard />

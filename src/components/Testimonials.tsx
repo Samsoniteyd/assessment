@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
                  bg-right-bottom bg-contain "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{  amount: 0.2 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
       {/* Heading */}
@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
         className="flex ml-20 flex-col md:flex-row justify-between items-start md:items-center"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{  amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       >
         <h2 className="font-poppins font-semibold text-[40px] md:text-[48px] leading-tight">
@@ -69,7 +69,7 @@ const Testimonials: React.FC = () => {
             }`}
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{  amount: 0.2 }}
             transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
           >
             <img src="/apro.png" alt="Quote Icon" className="w-8 h-8" />

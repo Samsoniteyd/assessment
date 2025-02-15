@@ -19,7 +19,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
         className="max-w-xl ml-20"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <h3 className="font-poppins font-semibold text-[48px] leading-[76.8px] tracking-[1%]">
@@ -45,7 +45,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
         className="mt-10 lg:mt-0 space-y-6 w-full max-w-md"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{  amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         {features.map((feature, index) => (
@@ -65,7 +65,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
             }
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ amount: 0.2 }}
             transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
           >
             {/* Icon Container */}

@@ -11,7 +11,7 @@ const TrustedCompanies: React.FC = () => {
       className="py-20 bg-[#00040F] px-10  text-white"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{  amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {/* Logos Grid */}
@@ -24,7 +24,7 @@ const TrustedCompanies: React.FC = () => {
             className="h-10 opacity-75 hover:opacity-100 transition transform hover:scale-105"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{  amount: 0.2 }}
             transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
           />
         ))}

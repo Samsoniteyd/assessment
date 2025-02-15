@@ -14,20 +14,10 @@ import Footer from "../components/Footer";
 import { FooterLink } from "@/types/foot";
 import { Feature } from "@/types/index";
 
-
 const footerLinks: FooterLink[] = [
-  {
-    title: "Useful Links",
-    links: ["Content", "How it Works", "Create", "Explore", "Terms & Services"],
-  },
-  {
-    title: "Community",
-    links: ["Help Center", "Partners", "Suggestions", "Blog", "Newsletters"],
-  },
-  {
-    title: "Partner",
-    links: ["Our Partner", "Become a Partner"],
-  },
+  { title: "Useful Links", links: ["Content", "How it Works", "Create", "Explore", "Terms & Services"] },
+  { title: "Community", links: ["Help Center", "Partners", "Suggestions", "Blog", "Newsletters"] },
+  { title: "Partner", links: ["Our Partner", "Become a Partner"] },
 ];
 
 const stat = [
@@ -37,126 +27,63 @@ const stat = [
 ];
 
 const features: Feature[] = [
-  {
-    id: 1,
-    title: "Rewards",
-    description: "The best credit cards offer some tantalizing combinations of promotions and prizes.",
-    icon: "/Star.png",
-  },
-  {
-    id: 2,
-    title: "100% Secured",
-    description: "We take proactive steps to make sure your information and transactions are secure.",
-    icon: "/Shield.png",
-  },
-  {
-    id: 3,
-    title: "Balance Transfer",
-    description: "A balance transfer credit card can save you a lot of money in interest charges.",
-    icon: "/Send.png",
-  },
+  { id: 1, title: "Rewards", description: "The best credit cards offer some tantalizing combinations of promotions and prizes.", icon: "/Star.png" },
+  { id: 2, title: "100% Secured", description: "We take proactive steps to make sure your information and transactions are secure.", icon: "/Shield.png" },
+  { id: 3, title: "Balance Transfer", description: "A balance transfer credit card can save you a lot of money in interest charges.", icon: "/Send.png" },
 ];
 
 export default function Home() {
   return (
-    <div className="bg-[#00040F]   font-poppins"
-    >
+    <div className="bg-[#00040F] font-poppins">
       <Head>
         <title>HooBank | Next Gen Payment</title>
       </Head>
 
-      {/* Navbar - */}
+      {/* Navbar */}
       <Navbar />
-      
+
       {/* Hero Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <Hero />
       </motion.div>
 
       {/* Statistics Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <Statistics stats={stat} />
-        
       </motion.div>
-      
 
-      {/* Business Section & Billing */}
-      <motion.div 
-        className=""
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      {/* Business Section */}
+      <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <BusinessSection features={features} />
       </motion.div>
 
-      <motion.div 
-        className=""
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      >
+      {/* Billing Section */}
+      <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} viewport={{ amount: 0.2 }}>
         <Billing />
       </motion.div>
 
       {/* Card Deal Section */}
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <CardDeal />
       </motion.div>
 
-      {/* Testimonials & Trusted Companies */}
-      <motion.div
-  
-  initial={{ opacity: 0, y: 50 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.2 }}
-  transition={{ duration: 0.8, ease: "easeOut" }}
->
-  <Testimonials />
-</motion.div>
+      {/* Testimonials */}
+      <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
+        <Testimonials />
+      </motion.div>
 
-      <motion.div 
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      >
+      {/* Trusted Companies */}
+      <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} viewport={{ amount: 0.2 }}>
         <TrustedCompanies />
       </motion.div>
 
       {/* Call To Action */}
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <CTA />
       </motion.div>
 
       {/* Footer */}
-      <motion.div 
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
+      <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} viewport={{ amount: 0.2 }}>
         <Footer footerLinks={footerLinks} />
       </motion.div>
     </div>

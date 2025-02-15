@@ -25,7 +25,7 @@ const Dashboard: React.FC = () => {
       className="relative flex items-center  justify-center"
       initial={{ opacity: 0, scale: 0.9 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{  amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       {/* Background Circles */}
@@ -58,7 +58,7 @@ const Dashboard: React.FC = () => {
           className="absolute -top-20 right-10"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
           <ScanCreditCard />
@@ -69,7 +69,7 @@ const Dashboard: React.FC = () => {
           className="absolute -top-32 left-0"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
           <OnlineAnalysis data={analysisData} />
@@ -80,13 +80,14 @@ const Dashboard: React.FC = () => {
           className="absolute top-20"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
         >
           <PayMethod methods={paymentMethods} />
         </motion.div>
       </div>
     </motion.div>
+    
   );
 };
 

@@ -26,7 +26,7 @@ const Billing: React.FC = () => {
         className="relative ml-20 flex flex-col items-center space-y-10 min-h-screen py-20"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{  amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="relative">
@@ -35,7 +35,7 @@ const Billing: React.FC = () => {
             className="absolute -top-16 left-48 transform -translate-x-1/2 z-10"
             initial={{ opacity: 0, y: -50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{  amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
             <PaymentCard balance={210} />
@@ -46,7 +46,7 @@ const Billing: React.FC = () => {
             className="mt-20"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{  amount: 0.2 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           >
             <TransactionList transactions={transactions} />
@@ -56,7 +56,7 @@ const Billing: React.FC = () => {
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{  amount: 0.2 }}
             transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
           >
             <SuccessMessage />
@@ -69,7 +69,7 @@ const Billing: React.FC = () => {
         className="max-w-lg lg:ml-16 mt-10 lg:mt-0"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{  amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       >
         <h2 className="font-poppins font-semibold text-[48px] leading-[76.8px] tracking-[1%]">

@@ -1,6 +1,8 @@
 'use client'
 
 import React from "react";
+import Image from "next/image";
+
 
 
 const Navbar: React.FC = () => {
@@ -13,7 +15,7 @@ const Navbar: React.FC = () => {
       backgroundRepeat: "no-repeat",
     }}>
       <div className=" ml-20 text-sm font-bold">
-        <img src="/logo.png" alt="" className="w-28 " />
+        <Image src="/logo.png" alt="" className="w-28 " />
       </div>
       <ul className="flex space-x-8 "
       >

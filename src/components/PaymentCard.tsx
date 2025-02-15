@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 interface PaymentCardProps {
   balance: number;
@@ -15,7 +15,7 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ balance }) => {
       {/* PayPal Header */}
       <div className="flex items-center space-x-3">
         <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-          <img src="/paypal.png" alt="PayPal" className="w-6 h-6" />
+          <Image src="/paypal.png" alt="PayPal" className="w-6 h-6" />
         </div>
 
         <div>

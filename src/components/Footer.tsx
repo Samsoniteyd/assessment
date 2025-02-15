@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react";
+import Image from "next/image";
 
 import { FooterLink } from "@/types/foot";
 
@@ -14,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ footerLinks }) => {
       <div className="container ml-20 mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
-          <img src="/logo.png" alt="HooBank Logo" width={150} height={50} />
+          <Image src="/logo.png" alt="HooBank Logo" width={150} height={50} />
           <p className="text-gray-300 mt-4 font-poppins font-normal text-[18px] leading-[32px] tracking-[0%]">
             A new way to make payments easy, reliable, and secure.
           </p>
@@ -38,10 +39,10 @@ const Footer: React.FC<FooterProps> = ({ footerLinks }) => {
         <p className="text-gray-400 text-sm">Copyright © 2021 HooBank. All Rights Reserved.</p>
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <img src="/instagram.png" alt="" />
-          <img src="/facebook.png" alt="" />
-          <img src="/twitter.png" alt="" />
-          <img src="/linkedin.png" alt="" />
+          <Image src="/instagram.png" alt="" />
+          <Image src="/facebook.png" alt="" />
+          <Image src="/twitter.png" alt="" />
+          <Image src="/linkedin.png" alt="" />
          
         </div>
       </div>

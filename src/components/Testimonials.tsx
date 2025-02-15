@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -72,12 +73,12 @@ const Testimonials: React.FC = () => {
             viewport={{  amount: 0.2 }}
             transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
           >
-            <img src="/apro.png" alt="Quote Icon" className="w-8 h-8" />
+            <Image src="/apro.png" alt="Quote Icon" className="w-8 h-8" />
             <p className="text-white/90 mt-6 font-poppins text-[18px] leading-[32px] italic">
               “{testimonial.quote}”
             </p>
             <div className="flex items-center mt-8">
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-12 h-12 rounded-full mr-4"

@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 interface AnalysisData {
   income: string;
@@ -37,7 +38,7 @@ const OnlineAnalysis: React.FC<OnlineAnalysisProps> = ({ data }) => {
       {/* Simple Line Chart Representation */}
       <div className="mt-1  flex items-center justify-center">
         <p className="text-xs">
-            <img src="/line3.png" alt="" />
+            <Image src="/line3.png" alt="" />
         </p>
       </div>
 

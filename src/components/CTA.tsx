@@ -23,7 +23,7 @@ const CTA: React.FC = () => {
       {/* Left Content */}
       <div className="ml-20">
         <h2 className="font-poppins font-semibold text-[48px] leading-[67.2px] tracking-[0%]">
-          Let's try our service now!
+          Let&apos;s try our service now!
         </h2>
         <p className="text-white/70 font-poppins font-normal text-[18px] leading-[28.8px] tracking-[1%] mt-2">
           Everything you need to accept card payments <br />

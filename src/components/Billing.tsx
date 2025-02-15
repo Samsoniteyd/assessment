@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import PaymentCard from "./PaymentCard";
 import TransactionList from "./TransactionList";
 import SuccessMessage from "./SuccessMessage";
+import Image from "next/image";
+
 
 const transactions = [
   { id: 1, name: "Dribbble Pro", logo: "/dribble.png", date: "15 Days ago", amount: "250.83", isNegative: true },
@@ -82,8 +84,8 @@ const Billing: React.FC = () => {
 
         {/* App Store Buttons */}
         <div className="mt-6 flex space-x-4">
-          <img src="/appstore.png" alt="App Store" width={150} height={50} />
-          <img src="/googleplay.png" alt="Google Play" width={150} height={50} />
+          <Image src="/appstore.png" alt="App Store" width={150} height={50} />
+          <Image src="/googleplay.png" alt="Google Play" width={150} height={50} />
         </div>
       </motion.div>
     </section>

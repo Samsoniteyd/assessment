@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-// import Image from "next/image";
+import Image from "next/image";
 import { Feature } from "@/types/index";
 
 interface BusinessSectionProps {
@@ -70,7 +70,7 @@ const BusinessSection: React.FC<BusinessSectionProps> = ({ features }) => {
           >
             {/* Icon Container */}
             <div className="flex items-center justify-center bg-gray-800 p-2 rounded-full">
-              <img src={feature.icon} alt={feature.title} width={40} height={40} />
+              <Image src={feature.icon} alt={feature.title} width={40} height={40} />
             </div>
 
             {/* Feature Content */}

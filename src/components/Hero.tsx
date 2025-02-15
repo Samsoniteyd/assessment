@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 
-// import Image from "next/image";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
         {/* Discount Badge */}
         <div className="flex items-center w-80  bg-gradient-to-b from-[#272727] to-[#11101D] px-1 py-1 rounded-full text-sm text-gray-300 mb-4 justify-center">
          
-         <img src="/discount.png" alt="" className="h-6" />
+         <Image src="/discount.png" alt="" className="h-6" />
         </div>
 
     {/* Hero Heading Section */}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
   {/* CTA Button */}
   <div className="mt-8 lg:mt-0 absolute top-1 right-6">
     <button className="flex items-center justify-center w-24 h-24  rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform">
-      <img src="/get.png" alt="Get Started" className="object-contain" />
+      <Image src="/get.png" alt="Get Started" className="object-contain" />
     </button>
   </div>
 </div>
@@ -80,26 +80,26 @@ const Hero: React.FC = () => {
       }}>
       {/* Back Card */}
       <div className="absolute transform rotate-12 translate-y-18 -translate-x-14 z-20">
-        <img src="/Group2.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
+        <Image src="/Group2.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
       </div>
       {/* Front Card */}
       <div className="rotate-12 -translate-y-12 z-50">
-        <img src="/Group1.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
+        <Image src="/Group1.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
       </div>
       {/* Bottom Card */}
       <div className="absolute rotate-12 -translate-y-40 translate-x-1">
-        <img src="/Rectangle.png" alt="Credit card" className="w-full h-full object-cover" />
+        <Image src="/Rectangle.png" alt="Credit card" className="w-full h-full object-cover" />
       </div>
     </div>
 
     {/* Floating Circles */}
-    <img src="/circle1.png" alt="" className="absolute top-0 -left-19 w-16 h-16" />
-    <img src="/circle2.png" alt="" className="absolute bottom-0 right-14 w-10 h-10" />
-    <img src="/circle3.png" alt="" className="absolute -bottom-5 left-6 w-6 h-6" />
+    <Image src="/circle1.png" alt="" className="absolute top-0 -left-19 w-16 h-16" />
+    <Image src="/circle2.png" alt="" className="absolute bottom-0 right-14 w-10 h-10" />
+    <Image src="/circle3.png" alt="" className="absolute -bottom-5 left-6 w-6 h-6" />
 
     {/* Robot Hand */}
     <div className="absolute top-1/2 right-0 transform">
-      <img src="/robot.png" alt="Robot hand" className="w-[84rem]" />
+      <Image src="/robot.png" alt="Robot hand" className="w-[84rem]" />
     </div>
   </div>
 </div>

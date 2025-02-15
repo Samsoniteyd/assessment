@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 interface Transaction {
   id: number;
@@ -35,7 +35,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
             {/* Logo & Name */}
             <div className="flex items-center space-x-3">
               <div className={`w-8 h-8 ${logoBgClass} flex items-center justify-center rounded-full`}>
-                <img src={transaction.logo} alt={transaction.name} width={30} height={30} className="object-contain" />
+                <Image src={transaction.logo} alt={transaction.name} width={30} height={30} className="object-contain" />
               </div>
               <div>
                 <h4 className="text-white text-sm">{transaction.name}</h4>
@@ -45,7 +45,7 @@ const TransactionList: React.FC<TransactionListProps> = ({ transactions }) => {
 
             {/* Amount & Arrow Icon */}
             <div className="flex items-center space-x-2">
-              <img
+              <Image
                 src={transaction.isNegative ? "/Polygon3.png" : "/Polygon4.png"} 
                 alt={transaction.isNegative ? "Down" : "Up"}
                 width={15}

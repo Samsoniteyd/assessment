@@ -39,10 +39,10 @@ const Footer: React.FC<FooterProps> = ({ footerLinks }) => {
         <p className="text-gray-400 text-sm">Copyright © 2021 HooBank. All Rights Reserved.</p>
         {/* Social Media Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <Image src="/instagram.png" alt="" />
-          <Image src="/facebook.png" alt="" />
-          <Image src="/twitter.png" alt="" />
-          <Image src="/linkedin.png" alt="" />
+        <Image src="/instagram.png" alt="Instagram" width={30} height={30} className="w-4 h-4 object-contain" />
+      <Image src="/facebook.png" alt="Facebook" width={30} height={30} className="w-4 h-4 object-contain" />
+      <Image src="/twitter.png" alt="Twitter" width={30} height={30} className="w-4 h-4 object-contain" />
+      <Image src="/linkedin.png" alt="LinkedIn" width={10} height={30} className="w-4 h-4 object-contain" />
          
         </div>
       </div>

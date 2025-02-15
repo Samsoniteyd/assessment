@@ -18,7 +18,13 @@ const PayMethod: React.FC<PayMethodProps> = ({ methods }) => {
     style={{ backgroundImage: "url('/Rectangle2.png')" }}  >
         <div className="flex justify-between">
         <h3 className="font-poppins font-semibold text-[16px] leading-[25.6px] tracking-[1%] text-center">Pay Method</h3>
-        <span> <Image src="/arrow_drop_down.png" alt="" /> </span>
+        <span><Image 
+      src="/arrow_drop_down.png" 
+      alt="Dropdown Arrow" 
+      width={16}  
+      height={16} 
+      className="w-4 h-4 object-contain"
+    /></span>
 
         </div>
       <div className="flex items-center gap-2 mt-1">

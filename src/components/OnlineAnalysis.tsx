@@ -37,9 +37,15 @@ const OnlineAnalysis: React.FC<OnlineAnalysisProps> = ({ data }) => {
 
       {/* Simple Line Chart Representation */}
       <div className="mt-1  flex items-center justify-center">
-        <p className="text-xs">
-            <Image src="/line3.png" alt="" />
-        </p>
+      <div className="flex items-center">
+      <Image 
+        src="/line3.png" 
+        alt="Line Decoration" 
+        width={100}  
+        height={10}  
+        className="w-auto h-4 object-contain"
+      />
+    </div>
       </div>
 
       {/* Months Navigation */}

@@ -14,9 +14,15 @@ const PaymentCard: React.FC<PaymentCardProps> = ({ balance }) => {
     >
       {/* PayPal Header */}
       <div className="flex items-center space-x-3">
-        <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
-          <Image src="/paypal.png" alt="PayPal" className="w-6 h-6" />
-        </div>
+      <div className="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+      <Image 
+        src="/paypal.png" 
+        alt="PayPal" 
+        width={24} 
+        height={24} 
+        className="object-contain"
+      />
+    </div>
 
         <div>
           <h3 className="text-white font-semibold">Paypal</h3>

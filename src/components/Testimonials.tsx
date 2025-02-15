@@ -73,15 +73,23 @@ const Testimonials: React.FC = () => {
             viewport={{  amount: 0.2 }}
             transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
           >
-            <Image src="/apro.png" alt="Quote Icon" className="w-8 h-8" />
-            <p className="text-white/90 mt-6 font-poppins text-[18px] leading-[32px] italic">
+              <Image 
+                src="/apro.png" 
+                alt="Quote Icon" 
+                width={32}  // Matches w-8 (8 * 4 = 32px)
+                height={32} // Matches h-8 (8 * 4 = 32px)
+                className="w-8 h-8 object-contain"
+              />          
+                <p className="text-white/90 mt-6 font-poppins text-[18px] leading-[32px] italic">
               “{testimonial.quote}”
             </p>
             <div className="flex items-center mt-8">
-              <Image
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full mr-4"
+                          <Image 
+                src={testimonial.image} 
+                alt={testimonial.name} 
+                width={48}  // Matches w-12 (12 * 4 = 48px)
+                height={48} // Matches h-12 (12 * 4 = 48px)
+                className="w-12 h-12 rounded-full mr-4 object-cover"
               />
               <div>
                 <p className="text-white font-semibold">{testimonial.name}</p>

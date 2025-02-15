@@ -18,12 +18,13 @@ const TrustedCompanies: React.FC = () => {
       {/* Logos Grid */}
       <div className="flex  flex-wrap justify-center gap-14">
         {companyLogos.map((logo, index) => (
-           <Image
+          <Image
           key={index}
           src={logo}
           alt="Company Logo"
-          className="h-10 opacity-75 hover:opacity-100 transition transform hover:scale-105"
-         
+          width={160} // Adjust width as needed
+          height={40} // Matches h-10 (10 * 4 = 40px)
+          className="h-10 w-auto opacity-75 hover:opacity-100 transition-transform hover:scale-105 object-contain"
         />
          
         ))}

@@ -22,10 +22,17 @@ const Hero: React.FC = () => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}>
         {/* Discount Badge */}
-        <div className="flex items-center w-80  bg-gradient-to-b from-[#272727] to-[#11101D] px-1 py-1 rounded-full text-sm text-gray-300 mb-4 justify-center">
-         
-         <Image src="/discount.png" alt="" className="h-6" />
-        </div>
+        <div className="flex items-center justify-center w-72 sm:w-80 bg-gradient-to-b from-[#272727] to-[#11101D] px-3 py-2 rounded-full text-gray-300 text-xs sm:text-sm mb-4">
+        <Image 
+        src="/discount.png" 
+        alt="Discount Badge" 
+        width={170} 
+        height={90} 
+        className="h-6 w-96 object-contain"
+      />
+     
+    </div>
+   
 
     {/* Hero Heading Section */}
   <div className="relative flex flex-col lg:flex-row items-center  w-full">
@@ -41,11 +48,17 @@ const Hero: React.FC = () => {
   {/* </div> */}
 
   {/* CTA Button */}
-  <div className="mt-8 lg:mt-0 absolute top-1 right-6">
-    <button className="flex items-center justify-center w-24 h-24  rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform">
-      <Image src="/get.png" alt="Get Started" className="object-contain" />
-    </button>
-  </div>
+  <div className="absolute top-2 right-6 lg:top-4 lg:right-10">
+      <button className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary hover:opacity-80 hover:scale-105 transition-transform duration-300">
+        <Image 
+          src="/get.png" 
+          alt="Get Started" 
+          width={120} 
+          height={80} 
+          className="object-contain"
+        />
+      </button>
+    </div>
 </div>
 
       
@@ -78,28 +91,48 @@ const Hero: React.FC = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}>
+       
       {/* Back Card */}
-      <div className="absolute transform rotate-12 translate-y-18 -translate-x-14 z-20">
-        <Image src="/Group2.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
+      <div className="absolute w-[30rem] transform rotate-12 translate-y-18 -translate-x-14 z-20">
+        <Image src="/Group2.png" alt="Credit card" width={500}
+            height={300}
+            className="w-full h-full object-cover rounded-xl"/>
       </div>
       {/* Front Card */}
-      <div className="rotate-12 -translate-y-12 z-50">
-        <Image src="/Group1.png" alt="Credit card" className="w-full h-full object-cover rounded-xl" />
+      <div className="rotate-12 w-[30rem] -translate-y-12 z-50">
+        <Image src="/Group1.png" alt="Credit card" 
+         width={500}
+         height={300} className="w-full h-full object-cover rounded-xl" />
       </div>
       {/* Bottom Card */}
       <div className="absolute rotate-12 -translate-y-40 translate-x-1">
-        <Image src="/Rectangle.png" alt="Credit card" className="w-full h-full object-cover" />
+        <Image src="/Rectangle.png" alt="Credit card" 
+        width={500}
+        height={300} className="w-full h-full object-cover" />
       </div>
     </div>
 
     {/* Floating Circles */}
-    <Image src="/circle1.png" alt="" className="absolute top-0 -left-19 w-16 h-16" />
-    <Image src="/circle2.png" alt="" className="absolute bottom-0 right-14 w-10 h-10" />
-    <Image src="/circle3.png" alt="" className="absolute -bottom-5 left-6 w-6 h-6" />
+    <Image src="/circle1.png" alt=""  width={64}
+        height={64}
+        className="absolute top-0 -left-10 w-16 h-16 " />
+    <Image src="/circle2.png" alt="" width={40}
+        height={40}
+        className="absolute bottom-0 right-10 w-10 h-10"  />
+    <Image src="/circle3.png" alt=""
+     width={24}
+     height={24}
+     className="absolute -bottom-5 left-6 w-6 h-6" />
 
     {/* Robot Hand */}
-    <div className="absolute top-1/2 right-0 transform">
-      <Image src="/robot.png" alt="Robot hand" className="w-[84rem]" />
+    <div className="absolute top-1/2 right-0 ">
+      <Image 
+        src="/robot.png" 
+        alt="Robot hand" 
+        width={1344}  
+        height={900}  
+        className="w-[40rem] md:w-[60rem] lg:w-[84rem] object-contain"
+      />
     </div>
   </div>
 </div>

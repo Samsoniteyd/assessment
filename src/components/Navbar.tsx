@@ -15,7 +15,9 @@ const Navbar: React.FC = () => {
       backgroundRepeat: "no-repeat",
     }}>
       <div className=" ml-20 text-sm font-bold">
-        <Image src="/logo.png" alt="" className="w-28 " />
+        {/* <Image src="/logo.png" alt="" className="w-28 " /> */}
+        <Image src="/logo.png" alt="Logo" width={120} height={50} />
+
       </div>
       <ul className="flex space-x-8 "
       >

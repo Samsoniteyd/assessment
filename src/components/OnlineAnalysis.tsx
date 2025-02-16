@@ -41,9 +41,9 @@ const OnlineAnalysis: React.FC<OnlineAnalysisProps> = ({ data }) => {
       <Image 
         src="/line3.png" 
         alt="Line Decoration" 
-        width={100}  
-        height={10}  
-        className="w-auto h-4 object-contain"
+        width={200}  
+        height={200}  
+        className="w-30 h-18 object-contain"
       />
     </div>
       </div>
